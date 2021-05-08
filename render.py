@@ -3,9 +3,9 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 
-def render_page(post_data, template):
+def render_page(post_data, template, filename):
     print(f"Rendering {post_data} page to static file.")
-    output_name = str(template).replace('.py', '.html')
+    output_name = filename + '.html'
     with open(Path().absolute() / 'html' / output_name, 'w+') as file:
         html = template.render(
             page=post_data,
@@ -24,7 +24,7 @@ def render_posts():
             post_module = importlib.import_module(f'{module_name}.{module_file}')
             post_data = post_module.page()
             print(post_data)
-            render_page(post_data=post_data, template=env.get_template('post.html'))
+            render_page(post_data=post_data, template=env.get_template('post.html'), filename=module_file)
 
 
 if __name__ == "__main__":
