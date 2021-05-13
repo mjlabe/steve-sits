@@ -1,0 +1,11 @@
+{
+    "template": "posts/post.html",
+    "title": "Rock City",
+    "subtitle": "Massive rock formations along marked, scenic trails with a peaceful vibe.",
+    "location": "Olean, NY",
+    "body": [
+        {"p": "1st paragraph"},
+        {"i": "demo-image-01.jpg"},
+        {"p": "2nd paragraph"}
+    ]
+}
