@@ -12,21 +12,22 @@
     <link href="../static/grayscale/vendor/bootstrap/css/bootstrap.min.04aca1f4cd3e.css" rel="stylesheet" type="text/css">
 
     <!-- Custom fonts for this template -->
-    <link href="../static/grayscale/vendor/fontawesome-free/css/all.min.c5f7b75baa77.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../static/grayscale/css/grayscale.css " rel="stylesheet" type="text/css">
+    <link href="../static/grayscale/css/grayscale.css?v=1.0" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="../static/grayscale/css/styles.css" rel="stylesheet"/>
+    <link href="../static/grayscale/css/styles.css?v=1.0" rel="stylesheet"/>
 </head>
 
 <body id="page-top">
+
+<div class="container">
 
 <a href="../"><h4 class="p-3 font-marker">Steve Sits</h4></a>
 
@@ -82,14 +83,14 @@
 
             <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #1da1f2"></i>
-                    <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.bloodyreapercomics.com%2Fblog%2Fjohn-wise-father%2F&amp;text=John%20the%20Wise%20Father">
+                    <a onclick="window.location='https://twitter.com/share?url' + window.location.href;return false;" href="#">
                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                     </a>
                 </span>
 
             <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #ff4500"></i>
-                    <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.bloodyreapercomics.com%2Fblog%2Fjohn-wise-father%2F&amp;title=">
+                    <a onclick="window.location='http://www.reddit.com/submit?url=' + window.location.href;return false;" href="#">
                         <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
                     </a>
                 </span>
@@ -122,14 +123,19 @@
 <img src="../static/img/rock-city/inside.jpg">
 
 </div>
+</div>
 
-<!--<script>-->
-<!--    $("#facebookShareLink").on("click", function () {-->
-<!--        var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.bloodyreapercomics.com%2Fblog%2Fjohn-wise-father%2F", "pop", "width=600, height=400, scrollbars=no");-->
-<!--        console.log('fb');-->
-<!--        return false;-->
-<!--    });-->
-<!--</script>-->
-
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container">Copyright &copy; Steve Sits 2021</div>
+</footer>
 </body>
+
+<script>
+    $("#facebookShareLink").on("click", function () {
+        var fbpopup = window.open("https://nevermorefu.gitlab.io/steve-sits/sharer/sharer.php?u=" + window.location.href, "pop", "width=600, height=400, scrollbars=no");
+        console.log('fb');
+        return false;
+    });
+</script>
 </html>
