@@ -8,71 +8,73 @@
 
     <title>Rock City</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../static/grayscale/vendor/bootstrap/css/bootstrap.min.04aca1f4cd3e.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../static/grayscale/css/grayscale.css?v=1.0" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" type="text/css">
+          rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="../static/grayscale/css/styles.css?v=1.0" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
+
+    <style>
+        .content-block {
+            width: 100%;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+
+        @media (min-width: 992px) {
+            p {
+                font-size: 1.25rem;
+            }
+
+            .content-block {
+                padding-bottom: 3rem;
+                padding-top: 3rem;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
 
-<div class="container">
-
-<a href="../"><h4 class="p-3 font-marker">Steve Sits</h4></a>
-
-<!--&lt;!&ndash; Navigation &ndash;&gt;-->
-<!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">-->
-<!--    <div class="container">-->
-<!--        <a class="navbar-brand js-scroll-trigger" href="/">-->
-<!--            <a href="../" class="nav-link js-scroll-trigger"><h4>Steve Sits</h4></a>-->
-<!--        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"-->
-<!--                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"-->
-<!--                aria-label="Toggle navigation">-->
-<!--            <i class="fas fa-bars"></i>-->
-<!--        </button>-->
-<!--        <div class="collapse navbar-collapse" id="navbarResponsive">-->
-<!--            <ul class="navbar-nav ml-auto">-->
-
-<!--                <li class="ancestor">-->
-<!--                    <a href="/blog/" class="nav-link js-scroll-trigger">-->
-<!--                        Blog-->
-<!--                    </a>-->
-<!--                </li>-->
-
-<!--                <li class="">-->
-<!--                    <a href="/locations/" class="nav-link js-scroll-trigger">-->
-<!--                        Locations-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</nav>-->
-
-<div class="page-header">
-    <h1 style="font-weight: 800;" class="post-heading text-center">Rock City</h1>
-
-    <h3 class="text-center mb-5">
-        Massive rock formations along marked, scenic trails with a peaceful vibe.
-    </h3>
-
-    <hr>
-    <div class="row no-gutters">
-        <div class="col-6">
-            <a href="https://www.google.com/maps/place/Rock+City+Park/@42.0145069,-78.491975,14z/data=!4m8!1m2!3m1!2sRock+City+Park!3m4!1s0x0:0xb47d2b7d3445a47b!8m2!3d42.0172923!4d-78.4759048"><p class="mb-0 pt-1 pl-2"><i class="fa fa-map-marked-alt pr-2"></i>Olean, NY</p></a>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand font-marker" href="/">Steve Sits</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/posts.html">Posts</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/locations.html">Locations</a></li>
+            </ul>
         </div>
-        <div class="col-6 social text-right">
+    </div>
+</nav>
+
+<div class="container" style="padding-top: 7rem;">
+
+    <div class="page-header">
+        <h1 style="font-weight: 800;" class="post-heading text-center">Rock City</h1>
+
+        <h3 class="text-center mb-5">
+            Massive rock formations along marked, scenic trails with a peaceful vibe.
+        </h3>
+
+        <hr>
+        <div class="row no-gutters">
+            <div class="col-6">
+                <a href="https://www.google.com/maps/place/Rock+City+Park/@42.0145069,-78.491975,14z/data=!4m8!1m2!3m1!2sRock+City+Park!3m4!1s0x0:0xb47d2b7d3445a47b!8m2!3d42.0172923!4d-78.4759048"><p class="mb-0 pt-1 pl-2"><i class="fa fa-map-marked-alt pr-2"></i>Olean, NY</p></a>
+            </div>
+            <div class="col-6 social text-right">
 
                 <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #3b5998"></i>
@@ -81,48 +83,60 @@
                     </a>
                 </span>
 
-            <span class="fa-stack fa-1x">
+                <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #1da1f2"></i>
-                    <a onclick="window.location='https://twitter.com/share?url' + window.location.href;return false;" href="#">
+                    <a onclick="window.location='https://twitter.com/share?url' + window.location.href;return false;"
+                       href="#">
                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                     </a>
                 </span>
 
-            <span class="fa-stack fa-1x">
+                <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #ff4500"></i>
-                    <a onclick="window.location='http://www.reddit.com/submit?url=' + window.location.href;return false;" href="#">
+                    <a onclick="window.location='http://www.reddit.com/submit?url=' + window.location.href;return false;"
+                       href="#">
                         <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
                     </a>
                 </span>
 
+            </div>
+
         </div>
+        <hr>
 
+
+        <img src="https://d14vpnxcvrzf04.cloudfront.net/posts/rock-city/bag-mast.jpg" style="width: 100%">
+
+        <hr class="mb-3">
     </div>
-    <hr>
 
-
-    <img src="../static/img/rock-city/bag.jpg" style="width: 100%">
-
-    <hr class="mb-3">
-</div>
-
-<div class="rich-text">
- 
-<p>Worth exploring great views and trails great for photo opportunities. Overall great place to get away for part of the day to do some exploring and forget about the world. A very easy and not super strenuous hike which is great for families. I just wish there was more trail. It is a geological wonder and fun hike. Tons of old machinery, including out of commission oil well and one still working. With all the large rocks, there are plenty of placed to climb and find a seat. </p>
- 
-<img src="../static/img/rock-city/front.jpg">
- 
-<p>They also had a great gift shop with reasonable prices. Customer service was amazing the owners are friendly and very welcoming and kind. Beautiful place to hike. Very peaceful and like being in an enchanted wonderland. Lots of crevices in the rocks to explore. Trail is about a mile and very well marked and maintained.  The rock formations are really cool. </p>
- 
-<img src="../static/img/rock-city/flat.jpg">
- 
-<img src="../static/img/rock-city/bear.jpg">
- 
-<img src="../static/img/rock-city/bench.jpg">
- 
-<img src="../static/img/rock-city/inside.jpg">
-
-</div>
+    <div class="rich-text">
+         
+        <p class="content-block">Worth exploring great views and trails great for photo opportunities. Overall great place to get away for part of the day to do some exploring and forget about the world. A very easy and not super strenuous hike which is great for families. I just wish there was more trail. It is a geological wonder and fun hike. Tons of old machinery, including out of commission oil well and one still working. With all the large rocks, there are plenty of placed to climb and find a seat. </p>
+         
+        <img
+            class="content-block"
+            src="https://d14vpnxcvrzf04.cloudfront.net/posts/rock-city/front.jpg">
+         
+        <p class="content-block">They also had a great gift shop with reasonable prices. Customer service was amazing the owners are friendly and very welcoming and kind. Beautiful place to hike. Very peaceful and like being in an enchanted wonderland. Lots of crevices in the rocks to explore. Trail is about a mile and very well marked and maintained.  The rock formations are really cool. </p>
+         
+        <img
+            class="content-block"
+            src="https://d14vpnxcvrzf04.cloudfront.net/posts/rock-city/flat.jpg">
+         
+        <img
+            class="content-block"
+            src="https://d14vpnxcvrzf04.cloudfront.net/posts/rock-city/bear.jpg">
+         
+        <img
+            class="content-block"
+            src="https://d14vpnxcvrzf04.cloudfront.net/posts/rock-city/bench.jpg">
+         
+        <img
+            class="content-block"
+            src="https://d14vpnxcvrzf04.cloudfront.net/posts/rock-city/inside.jpg">
+        
+    </div>
 </div>
 
 <!-- Footer-->
@@ -130,6 +144,14 @@
     <div class="container">Copyright &copy; Steve Sits 2021</div>
 </footer>
 </body>
+
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Core theme JS-->
+<script src="/static/grascale/js/scripts.js"></script>
 
 <script>
     $("#facebookShareLink").on("click", function () {

@@ -6,7 +6,7 @@
 
 #mainNav {
     min-height: 56px;
-    background-color: #fff;
+    background-color: #f8f9fa;
 }
 
 #mainNav .navbar-toggler {
@@ -34,7 +34,6 @@
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
     outline: none;
-    background-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -42,7 +41,6 @@
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
-        background-color: transparent;
         -webkit-transition: background-color 0.3s ease-in-out;
         transition: background-color 0.3s ease-in-out;
     }
@@ -68,7 +66,7 @@
     }
 
     #mainNav.navbar-shrink {
-        background-color: #fff;
+        background-color: #f8f9fa;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -283,7 +281,7 @@
 }
 
 .contact-section .social a:active {
-    color: #fff;
+    color: #f8f9fa;
 }
 
 body {
@@ -397,7 +395,7 @@ footer {
 }
 
 #mainNav {
-    background-color: #fff;
+    background-color: #f8f9fa;
     border-bottom: 1px solid lightgrey;
 }
 
@@ -415,7 +413,6 @@ footer {
     #mainNav .nav-link {
         color: #161616;
         padding: 1.5rem 1.5rem 1.25rem;
-        border-bottom: 0.25rem solid transparent;
     }
 
     #mainNav .nav-link:hover {

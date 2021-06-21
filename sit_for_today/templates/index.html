@@ -6,7 +6,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>Steve Sits</title>
-    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -16,33 +16,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./static/grayscale/css/styles.css?v=1.0" rel="stylesheet"/>
+    <link href="/static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
 </head>
 <body id="page-top">
-<!--&lt;!&ndash; Navigation&ndash;&gt;-->
-<!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">-->
-<!--    <div class="container">-->
-<!--        <a class="navbar-brand js-scroll-trigger font-marker" href="#page-top">Steve Sits</a>-->
-<!--        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"-->
-<!--                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"-->
-<!--                aria-label="Toggle navigation">-->
-<!--            Menu-->
-<!--            <i class="fas fa-bars"></i>-->
-<!--        </button>-->
-<!--        <div class="collapse navbar-collapse" id="navbarResponsive">-->
-<!--            <ul class="navbar-nav ml-auto">-->
-<!--                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Blog</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</nav>-->
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand font-marker" href="/">Steve Sits</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/posts.html">Posts</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/locations.html">Locations</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div class="content">
 
     <!-- Masthead-->
-    <div class="hero-container container-fluid">
-        <img src="./static/img/steve-hero-slides.png" class="hero-image mx-auto">
-        <img src="./static/img/steve-hero.jpg" class="hero-image-sm mx-auto">
+    <div class="hero-container container-fluid pt-5">
+        <img src="{{ urls.static_files }}/steve-hero-slides.png" class="hero-image mx-auto">
+        <img src="{{ urls.static_files }}/teve-hero.jpg" class="hero-image-sm mx-auto">
         <div class="hero-heading">
             <h1 class="font-marker text-white-80" style="font-weight: bold;">Steve Sits</h1>
             <h4 class="text-white-80 font-marker">One man's journey to find the perfect log.</h4>
@@ -50,15 +50,14 @@
     </div>
 
     <!-- Projects-->
-    <section class="projects-section bg-light mb-5" id="projects">
+    <section class="projects-section mb-5" id="projects">
         <div class="container">
 
             <!-- Project One Row-->
             <div class="row blog-posts justify-content-center no-gutters">
-                <div class="col-lg-4 col-md-4 w-100"></div>
                 <div class="col-lg-4 col-md-4">
                     <a href="./posts/rock_city.html">
-                        <img class="img-fluid" src="./static/img/rock-city/bag-thumb.jpg" alt="..."/>
+                        <img class="img-fluid" src="{{ urls.static_files }}{{ content.posts__rock_city.thumbnail }}" alt="..."/>
                         <div class="text-center h-100 project">
                             <div class="d-flex">
                                 <div class="title-text w-100 my-auto text-center text-lg-center">
@@ -74,21 +73,43 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4 w-100"></div>
+
+                <div class="col-lg-4 col-md-4">
+                    <a href="{{ urls.posts__klipknocky_state_forest }}">
+                        <img class="img-fluid"
+                             src="{{ urls.static_files }}{{ content.posts__klipknocky_state_forest.thumbnail }}"
+                             alt="..."/>
+                        <div class="text-center h-100 project">
+                            <div class="d-flex">
+                                <div class="title-text w-100 my-auto text-center text-lg-center">
+                                    <hr class="d-lg-block mb-3 title-hr"/>
+                                    <h4>{{ content.posts__klipknocky_state_forest.title }}, {{
+                                        content.posts__klipknocky_state_forest.location
+                                        }}</h4>
+                                    <p class="mb-0">
+                                        {{ content.posts__klipknocky_state_forest.subtitle }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container">Copyright &copy; Steve Sits 2021</div>
-    </footer>
-<!--    &lt;!&ndash; Bootstrap core JS&ndash;&gt;-->
-<!--    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
-<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>-->
-<!--    &lt;!&ndash; Third party plugin JS&ndash;&gt;-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>-->
-<!--    &lt;!&ndash; Core theme JS&ndash;&gt;-->
-<!--    <script src="./static/grascale/js/scripts.js"></script>-->
 </div>
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container">Copyright &copy; Steve Sits 2021</div>
+</footer>
 </body>
+
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Core theme JS-->
+<script src="./static/grascale/js/scripts.js"></script>
+
 </html>
