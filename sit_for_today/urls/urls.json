@@ -1,4 +1,5 @@
 {
+    "static_files": "https://d14vpnxcvrzf04.cloudfront.net",
     "index": "/index.html",
     "blog": "/blog.html",
     "locations": "/locations.html",

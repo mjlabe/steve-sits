@@ -4,7 +4,7 @@
   "subtitle": "Massive rock formations along marked, scenic trails with a peaceful vibe.",
   "location": "Olean, NY",
   "map": "https://www.google.com/maps/place/Rock+City+Park/@42.0145069,-78.491975,14z/data=!4m8!1m2!3m1!2sRock+City+Park!3m4!1s0x0:0xb47d2b7d3445a47b!8m2!3d42.0172923!4d-78.4759048",
-  "masthead": "/static/img/rock-city/bag.jpg",
+  "masthead": "/posts/rock-city/bag.jpg",
   "body": [
     {
       "p": [
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "i": "../static/img/rock-city/front.jpg"
+      "i": "/posts/rock-city/front.jpg"
     },
     {
       "p": [
@@ -24,16 +24,16 @@
       ]
     },
     {
-      "i": "../static/img/rock-city/flat.jpg"
+      "i": "/posts/rock-city/flat.jpg"
     },
     {
-      "i": "../static/img/rock-city/bear.jpg"
+      "i": "/posts/rock-city/bear.jpg"
     },
     {
-      "i": "../static/img/rock-city/bench.jpg"
+      "i": "/posts/rock-city/bench.jpg"
     },
     {
-      "i": "../static/img/rock-city/inside.jpg"
+      "i": "/posts/rock-city/inside.jpg"
     }
   ]
 }

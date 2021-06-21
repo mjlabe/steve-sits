@@ -8,21 +8,36 @@
 
     <title>{{ content.title }}</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../static/grayscale/vendor/bootstrap/css/bootstrap.min.04aca1f4cd3e.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../static/grayscale/css/grayscale.css?v=1.0" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" type="text/css">
+          rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="./static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
+
+    <style>
+        .content-block {
+            width: 100%;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+
+        @media (min-width: 992px) {
+            p {
+                font-size: 1.25rem;
+            }
+
+            .content-block {
+                padding-bottom: 3rem;
+                padding-top: 3rem;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -47,19 +62,20 @@
 
 <div class="container" style="padding-top: 7rem;">
 
-<div class="page-header">
-    <h1 style="font-weight: 800;" class="post-heading text-center">{{ content.title }}</h1>
+    <div class="page-header">
+        <h1 style="font-weight: 800;" class="post-heading text-center">{{ content.title }}</h1>
 
-    <h3 class="text-center mb-5">
-        {{ content.subtitle }}
-    </h3>
+        <h3 class="text-center mb-5">
+            {{ content.subtitle }}
+        </h3>
 
-    <hr>
-    <div class="row no-gutters">
-        <div class="col-6">
-            <a href="{{ content.map }}"><p class="mb-0 pt-1 pl-2"><i class="fa fa-map-marked-alt pr-2"></i>{{ content.location }}</p></a>
-        </div>
-        <div class="col-6 social text-right">
+        <hr>
+        <div class="row no-gutters">
+            <div class="col-6">
+                <a href="{{ content.map }}"><p class="mb-0 pt-1 pl-2"><i class="fa fa-map-marked-alt pr-2"></i>{{
+                    content.location }}</p></a>
+            </div>
+            <div class="col-6 social text-right">
 
                 <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #3b5998"></i>
@@ -68,36 +84,40 @@
                     </a>
                 </span>
 
-            <span class="fa-stack fa-1x">
+                <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #1da1f2"></i>
-                    <a onclick="window.location='https://twitter.com/share?url' + window.location.href;return false;" href="#">
+                    <a onclick="window.location='https://twitter.com/share?url' + window.location.href;return false;"
+                       href="#">
                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                     </a>
                 </span>
 
-            <span class="fa-stack fa-1x">
+                <span class="fa-stack fa-1x">
                     <i class="fas fa-circle fa-stack-2x" style="color: #ff4500"></i>
-                    <a onclick="window.location='http://www.reddit.com/submit?url=' + window.location.href;return false;" href="#">
+                    <a onclick="window.location='http://www.reddit.com/submit?url=' + window.location.href;return false;"
+                       href="#">
                         <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
                     </a>
                 </span>
 
+            </div>
+
         </div>
+        <hr>
 
+
+        <img src="{{ urls.static_files }}{{ content.masthead }}" style="width: 100%">
+
+        <hr class="mb-3">
     </div>
-    <hr>
 
-
-    <img src="{{ content.masthead }}" style="width: 100%">
-
-    <hr class="mb-3">
-</div>
-
-<div class="rich-text">
-{% for element in content.body %} {% for key, val in element.items() %}
-{% if key == 'p' %}<p>{% for s in val %}{{ s }} {% endfor %}</p>{% elif key == 'i' %}<img src="{{ val }}">{% endif %}
-{% endfor %}{% endfor %}
-</div>
+    <div class="rich-text">
+        {% for element in content.body %} {% for key, val in element.items() %}
+        {% if key == 'p' %}<p class="content-block">{% for s in val %}{{ s }} {% endfor %}</p>{% elif key == 'i' %}<img
+            class="content-block"
+            src="{{ urls.static_files }}{{ val }}">{% endif %}
+        {% endfor %}{% endfor %}
+    </div>
 </div>
 
 <!-- Footer-->
@@ -106,13 +126,13 @@
 </footer>
 </body>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="./static/grascale/js/scripts.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Core theme JS-->
+<script src="/static/grascale/js/scripts.js"></script>
 
 <script>
     $("#facebookShareLink").on("click", function () {

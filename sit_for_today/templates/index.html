@@ -6,7 +6,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>Steve Sits</title>
-    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
+    <link href="/static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -41,8 +41,8 @@
 
     <!-- Masthead-->
     <div class="hero-container container-fluid pt-5">
-        <img src="./static/img/steve-hero-slides.png" class="hero-image mx-auto">
-        <img src="./static/img/steve-hero.jpg" class="hero-image-sm mx-auto">
+        <img src="{{ urls.static_files }}/steve-hero-slides.png" class="hero-image mx-auto">
+        <img src="{{ urls.static_files }}/teve-hero.jpg" class="hero-image-sm mx-auto">
         <div class="hero-heading">
             <h1 class="font-marker text-white-80" style="font-weight: bold;">Steve Sits</h1>
             <h4 class="text-white-80 font-marker">One man's journey to find the perfect log.</h4>
@@ -58,7 +58,7 @@
                 <div class="col-lg-4 col-md-4 w-100"></div>
                 <div class="col-lg-4 col-md-4">
                     <a href="./posts/rock_city.html">
-                        <img class="img-fluid" src="./static/img/rock-city/bag-thumb.jpg" alt="..."/>
+                        <img class="img-fluid" src="{{ urls.static_files }}/posts/rock-city/bag-thumb.jpg" alt="..."/>
                         <div class="text-center h-100 project">
                             <div class="d-flex">
                                 <div class="title-text w-100 my-auto text-center text-lg-center">
