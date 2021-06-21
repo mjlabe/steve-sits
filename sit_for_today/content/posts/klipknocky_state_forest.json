@@ -1,0 +1,25 @@
+{
+  "template": "posts/post.html",
+  "title": "Klipnocky State Forest",
+  "subtitle": "Extremely rocky and remote country trails, but lookout for the hairy women of Klipnocky.",
+  "location": "Almond, NY",
+  "map": "https://www.google.com/maps/place/Klipnocky+State+Forest,+Arkport,+NY+14807/@42.3921466,-77.8587147,13z/data=!3m1!4b1!4m5!3m4!1s0x89d185e84058e019:0x31ff2b4abbc9aabc!8m2!3d42.3850995!4d-77.8310104",
+  "masthead": "/posts/klipknocky-state-forest/klipknocky-mast.jpg",
+  "thumbnail": "/posts/klipknocky-state-forest/klipknocky-thumb.jpg",
+  "body": [
+    {
+      "p": [
+        "The origin of the name \"Klipnocky\" is uncertain. Local folklore includes stories about a race of Bigfoot-like creatures known as \"The Hairy Women of Klipnocky\". What is certain is that Klipnocky State Forest occupies some extremely rocky and remote country. Several old stone quarries can be found on the area. The most recent quarrying was during the construction of the Almond Dam in the 1940s. Several of the old quarries have been converted to wildlife ponds.",
+        "If you visit the area, check out some of the stone walls that run through the woods. You'll be amazed at the size of many of the rocks that were cleared in the days before motorized equipment in an attempt to bring the land under cultivation. Surprisingly, almost half of the acreage was cleared and farmed prior to state acquisition."
+      ]
+    },
+    {
+      "i": "/posts/klipknocky-state-forest/klipknocky.jpg"
+    },
+    {
+      "p": [
+        "The forest cover types are a mixture of native hardwoods, native conifers and planted conifers. The upland slopes are primarily hardwood species such as sugar maple, white ash, red maple, red oak and beech. Occasional stands of native eastern hemlock are present. The old fields were planted during the Great Depression by the Civilian Conservation Corps, with a variety of conifer species including red pine, Scotch pine, white pine, larch and spruce."
+      ]
+    }
+  ]
+}
