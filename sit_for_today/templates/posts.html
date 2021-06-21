@@ -6,7 +6,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>Steve Sits</title>
-    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
+    <link href="./static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
 </head>
 <body id="page-top">
 
@@ -54,8 +54,8 @@
                             <div class="d-flex">
                                 <div class="title-text w-100 my-auto text-center text-lg-center">
                                     <hr class="d-lg-block mb-3 title-hr"/>
-                                    <h4>{{ content.posts__rock_city.title }}, {{ content.posts__rock_city.location
-                                        }}</h4>
+                                    <h4>{{ content.posts__rock_city.title }}</h4>
+                                    <h4>{{ content.posts__rock_city.location }}</h4>
                                     <p class="mb-0">
                                         {{ content.posts__rock_city.subtitle }}
                                     </p>
@@ -69,14 +69,15 @@
 
                 <div class="col-lg-4 col-md-4">
                     <a href="{{ urls.posts__klipknocky_state_forest }}">
-                        <img class="img-fluid" src="{{ urls.static_files }}{{ content.posts__klipknocky_state_forest.thumbnail }}"
+                        <img class="img-fluid"
+                             src="{{ urls.static_files }}{{ content.posts__klipknocky_state_forest.thumbnail }}"
                              alt="..."/>
                         <div class="text-center h-100 project">
                             <div class="d-flex">
                                 <div class="title-text w-100 my-auto text-center text-lg-center">
                                     <hr class="d-lg-block mb-3 title-hr"/>
-                                    <h4>{{ content.posts__klipknocky_state_forest.title }}, {{ content.posts__klipknocky_state_forest.location
-                                        }}</h4>
+                                    <h4>{{ content.posts__klipknocky_state_forest.title }}</h4>
+                                    <h4> {{ content.posts__klipknocky_state_forest.location }}</h4>
                                     <p class="mb-0">
                                         {{ content.posts__klipknocky_state_forest.subtitle }}
                                     </p>
@@ -103,7 +104,7 @@
 <!-- Third party plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <!-- Core theme JS-->
-<script src="/static/grascale/js/scripts.js"></script>
+<script src="./static/grascale/js/scripts.js"></script>
 
 </body>
 </html>
