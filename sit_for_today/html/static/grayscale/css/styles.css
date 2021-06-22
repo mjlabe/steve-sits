@@ -4382,7 +4382,7 @@ input[type=button].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    /*padding: 0.5rem 1rem;*/
+    padding: 0 1rem;
 }
 
 .navbar .container,
@@ -4399,8 +4399,8 @@ input[type=button].btn-block {
 
 .navbar-brand {
     display: inline-block;
-    /*padding-top: 0.3125rem;*/
-    /*padding-bottom: 0.3125rem;*/
+    margin-top: -0.25rem;
+    margin-bottom: -0.25rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
@@ -5393,7 +5393,6 @@ a.badge-black:focus, a.badge-black.focus {
     height: auto;
     width: 100%;
     display: none;
-    padding-top: 28px;
 }
 
 @media (max-width: 991px) {
@@ -10936,7 +10935,7 @@ body {
 
     #mainNav .nav-link {
         transition: none;
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.5rem;
         color: rgba(0, 0, 0, 0.8);
     }
 
