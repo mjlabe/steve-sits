@@ -4382,7 +4382,7 @@ input[type=button].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    /*padding: 0.5rem 1rem;*/
 }
 
 .navbar .container,
@@ -4399,8 +4399,8 @@ input[type=button].btn-block {
 
 .navbar-brand {
     display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
+    /*padding-top: 0.3125rem;*/
+    /*padding-bottom: 0.3125rem;*/
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
@@ -5396,6 +5396,19 @@ a.badge-black:focus, a.badge-black.focus {
     padding-top: 28px;
 }
 
+@media (max-width: 991px) {
+    .hero-heading h1 {
+        font-size: 10rem !important;
+        line-height: 2rem !important;
+        padding-top: 1rem;
+    }
+
+    .hero-heading h4 {
+        font-size: 1.2rem !important;
+        line-height: 0.75rem !important;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-image {
         display: none;
@@ -5410,7 +5423,7 @@ a.badge-black:focus, a.badge-black.focus {
     }
 
     .hero-heading h1 {
-        font-size: 3rem !important;
+        font-size: 6rem !important;
         line-height: 3rem !important;
         padding-top: 5rem;
     }
@@ -5423,7 +5436,7 @@ a.badge-black:focus, a.badge-black.focus {
 
 @media (max-width: 300px) {
     .hero-heading h1 {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         line-height: 2rem !important;
         padding-top: 1rem;
     }
@@ -5442,7 +5455,7 @@ a.badge-black:focus, a.badge-black.focus {
 }
 
 .hero-heading h1 {
-    font-size: 5rem;
+    font-size: 15rem;
     line-height: 5rem;
     letter-spacing: 0.5rem;
     color: white;
@@ -10884,7 +10897,7 @@ body {
 
 #mainNav .navbar-toggler {
     font-size: 80%;
-    padding: 0.75rem;
+    padding: 0.5rem;
     color: #64a19d;
     border: 1px solid #64a19d;
 }
@@ -10895,8 +10908,7 @@ body {
 
 #mainNav .navbar-brand {
     color: #000000;
-    font-weight: 700;
-    padding: 0.9rem 0;
+    font-size: 3rem;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -10918,7 +10930,7 @@ body {
     }
 
     #mainNav .navbar-brand {
-        padding: 0.5rem 0;
+        /*padding: 0.5rem 0;*/
         color: rgba(0, 0, 0, 0.8);
     }
 
