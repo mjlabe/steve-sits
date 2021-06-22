@@ -17,8 +17,9 @@
           rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="../static/icomoon/ico.css?v=1.2" rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../static/grayscale/css/styles.css?v=1.1" rel="stylesheet"/>
+    <link href="../static/grayscale/css/styles.css?v=1.2" rel="stylesheet"/>
 
     <style>
         .content-block {
@@ -45,16 +46,16 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand font-marker" href="../">Steve Sits</a>
+        <a class="navbar-brand font-marker" href="../"><span class="icon-sft text-lg-left"></span></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+            <span class="icon-menu" style="font-size: x-large;"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/posts.html">Posts</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/locations.html">Locations</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../posts.html">Posts</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../locations.html">Locations</a></li>
             </ul>
         </div>
     </div>
@@ -72,8 +73,8 @@
         <hr>
         <div class="row no-gutters">
             <div class="col-6">
-                <a href="{{ content.map }}"><p class="mb-0 pt-1 pl-2"><i class="fa fa-map-marked-alt pr-2"></i>{{
-                    content.location }}</p></a>
+                <a href="{{ content.map }}"><p class="mb-0 pt-1 pl-2"><i
+                        class="fa fa-map-marked-alt pr-2"></i>{{ content.location }}</p></a>
             </div>
             <div class="col-6 social text-right">
 
@@ -113,9 +114,10 @@
 
     <div class="rich-text">
         {% for element in content.body %} {% for key, val in element.items() %}
-        {% if key == 'p' %}<p class="content-block">{% for s in val %}{{ s }} {% endfor %}</p>{% elif key == 'i' %}<img
-            class="content-block"
-            src="{{ urls.static_files }}{{ val }}">{% endif %}
+            {% if key == 'p' %}<p class="content-block">{% for s in val %}{{ s }} {% endfor %}</p>{% elif key == 'i' %}
+                <img
+                        class="content-block"
+                        src="{{ urls.static_files }}{{ val }}">{% endif %}
         {% endfor %}{% endfor %}
     </div>
 </div>
