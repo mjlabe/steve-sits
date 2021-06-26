@@ -4,3 +4,6 @@ run:
 
 build:
 	sg1 render sit_for_today
+
+syncs3:
+	aws s3 sync images/ s3://sitfortoday/

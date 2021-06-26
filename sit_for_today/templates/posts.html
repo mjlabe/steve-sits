@@ -47,9 +47,10 @@
 
             <!-- Project One Row-->
             <div class="row blog-posts justify-content-center no-gutters">
-                <div class="col-lg-4 col-md-4 pb-5">
+                <div class="col-lg-4 col-md-4 pb-5 pr-lg-5 pl-lg-5 pr-md-3 pl-md-3">
                     <a href="./posts/rock_city.html">
-                        <img class="img-fluid" src="{{ urls.static_files }}{{ content.posts__rock_city.thumbnail }}"
+                        <img class="img-fluid w-100"
+                             src="{{ urls.static_files }}{{ content.posts__rock_city.thumbnail }}"
                              alt="..."/>
                         <div class="text-center project">
                             <div class="d-flex">
@@ -66,11 +67,9 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-4 w-100 pb-5"></div>
-
-                <div class="col-lg-4 col-md-4 pb-5">
+                <div class="col-lg-4 col-md-4 pb-5 pr-lg-5 pl-lg-5 pr-md-3 pl-md-3">
                     <a href="./posts/klipknocky_state_forest.html">
-                        <img class="img-fluid"
+                        <img class="img-fluid w-100"
                              src="{{ urls.static_files }}{{ content.posts__klipknocky_state_forest.thumbnail }}"
                              alt="..."/>
                         <div class="text-center project">
@@ -81,6 +80,26 @@
                                     <h4> {{ content.posts__klipknocky_state_forest.location }}</h4>
                                     <p class="mb-0">
                                         {{ content.posts__klipknocky_state_forest.subtitle }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-4 pb-5 pr-lg-5 pl-lg-5 pr-md-3 pl-md-3">
+                    <a href="./posts/private_paradise.html">
+                        <img class="img-fluid w-100"
+                             src="{{ urls.static_files }}{{ content.posts__private_paradise.thumbnail }}"
+                             alt="..."/>
+                        <div class="text-center project">
+                            <div class="d-flex">
+                                <div class="title-text w-100 my-auto text-center text-lg-center">
+                                    <hr class="d-lg-block mb-3 title-hr"/>
+                                    <h4>{{ content.posts__private_paradise.title }}</h4>
+                                    <h4> {{ content.posts__private_paradise.location }}</h4>
+                                    <p class="mb-0">
+                                        {{ content.posts__private_paradise.subtitle }}
                                     </p>
                                 </div>
                             </div>

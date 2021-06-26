@@ -1,0 +1,39 @@
+{
+  "template": "posts/post.html",
+  "title": "Private Paradise",
+  "subtitle": "Rocky but not too crowded beach with a breakwater to explore.",
+  "location": "Westfield, NY",
+  "map": "https://www.google.com/maps/place/Private+Paradise/@42.3377706,-79.6151652,13.56z/data=!4m5!3m4!1s0x882d4759829f2503:0x78560eff8e1198ae!8m2!3d42.3434658!4d-79.596714",
+  "masthead": "/posts/private-paradise/private_paradise_steve_hero.jpg",
+  "thumbnail": "/posts/private-paradise/private_paradise_steve_thumb.jpg",
+  "body": [
+    {
+      "p": [
+        "This hidden gem is sure to bring breathtaking views, wildlife, and good vibes. Kick if your shoes and let the sand work your tired, worked feet."
+      ]
+    },
+    {
+      "i": "/posts/private-paradise/private_paradise_chillin.jpg"
+    },
+    {
+      "p": [
+        "The beach is pretty secluded and didn't have a lot of people. It was enjoyable to walk down the beach and splash in the waves.",
+        "Unfortunately there weren't many great spots to sit. Some benches near the lot and the rocks on the breakwater are about all you get."]
+    },
+    {
+      "i": "/posts/private-paradise/private_paradise_standing.jpg"
+    },
+    {
+      "i": "/posts/private-paradise/private_paradise_steve_out.jpg"
+    },
+    {
+      "i": "/posts/private-paradise/private_paradise_long.jpg"
+    },
+    {
+      "i": "/posts/private-paradise/private_paradise_bay.jpg"
+    },
+    {
+      "i": "/posts/private-paradise/private_paradise_log.jpg"
+    }
+  ]
+}
