@@ -38,6 +38,13 @@
                 padding-top: 3rem;
             }
         }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 210px;
+        }
     </style>
 </head>
 
@@ -63,12 +70,22 @@
 
 <div class="container" style="padding-top: 7rem;">
 
-    <div class="page-header">
+    <div class="page-header pt-lg-5">
         <h1 style="font-weight: 800;" class="post-heading text-center">{{ content.title }}</h1>
 
         <h3 class="text-center mb-5">
             {{ content.subtitle }}
         </h3>
+
+        <div class="center pb-3">
+            {% for i in range(1, 6) %}{% if i <= content.rating %}
+                <img src="https://d14vpnxcvrzf04.cloudfront.net/svg/log-color.svg" alt="" height="50px"
+                     style="margin-right: -15px">
+            {% else %}
+                <img src="https://d14vpnxcvrzf04.cloudfront.net/svg/log-trans.svg" alt="" height="50px"
+                     style="margin-right: -15px">
+            {% endif %}{% endfor %}
+        </div>
 
         <hr>
         <div class="row no-gutters">
