@@ -1,3 +1,4 @@
 {
-  "template": "locations.html"
+  "template": "locations.html",
+  "pagination": "posts/sg1_pagination.json"
 }
