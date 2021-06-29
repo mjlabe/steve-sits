@@ -2,5 +2,6 @@
   "template": "posts.html",
   "extras": [
     "posts"
-  ]
+  ],
+  "pagination": "posts/sg1_pagination.json"
 }
