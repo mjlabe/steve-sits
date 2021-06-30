@@ -1,5 +1,6 @@
 {
   "template": "posts/post.html",
+  "url": "posts/rock_city.html",
   "title": "Rock City",
   "subtitle": "Massive rock formations along marked, scenic trails with a peaceful vibe.",
   "location": "Olean, NY",
